@@ -1,0 +1,35 @@
+
+  body {
+    background: grey;
+  }
+
+  
+  h1,
+  h2 {
+    color: rgb(245, 249, 247);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 32px;
+  }
+  
+  label {
+    color: white;
+  }
+  
+  .container {
+    max-width: 80%;
+  }
+  
+  .presentcards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+  }
+  
+  .presentcards li {
+    font-size: 15px;
+  }
+
+  
