@@ -72,9 +72,9 @@ class Controller
       $dishName = $_POST['dishName'];
       $dishDescription = $_POST['dishDescription'];
       if ($this->dish->updateDish($dishID, $dishName, $dishDescription)) {
-        echo "<p>Successfully updated dish with ID: $dishID</p>";
+        echo "<p class='text-center bg-light' >Successfully updated dish with ID: $dishID</p>";
       } else {
-        echo "<p>Failed to update dish with ID: $dishID</p>";
+        echo "<p class='text-center bg-light' >Failed to update dish with ID: $dishID</p>";
       }
     }
     // $this->showDishes();
@@ -111,9 +111,9 @@ class Controller
     $supplierID = $_POST['supplierID'];
     $ingredientTypeID = $_POST['ingredientTypeID'];
     if ($this->ingredientModel->insertIngredient($ingredientName, $ingredientPrice, $supplierID, $ingredientTypeID)) {
-      echo "<p>Successfully added: $ingredientName, $ingredientPrice, $supplierID, $ingredientTypeID!</p>";
+      echo "<p class='text-center bg-light' >Successfully added: $ingredientName, $ingredientPrice, $supplierID, $ingredientTypeID!</p>";
     } else {
-      echo "<p>Failed to add!</p>";
+      echo "<p class='text-center bg-light' >Failed to add!</p>";
     }
   }
 
@@ -122,9 +122,9 @@ class Controller
     if (isset($_POST['deleteIngredient'])) {
       $ingredientID = $_POST['ingredientID'];
       if ($this->ingredientModel->deleteIngredient($ingredientID)) {
-        echo "<p style='color:white; font-size:14px; width: 80%; margin: 0 auto;'>Successfully deleted ingredient ID: $ingredientID</p>";
+        echo "<p style='color:white; font-size:16px; width: 80%; margin: 0 auto;'>Successfully deleted ingredient ID: $ingredientID</p>";
       } else {
-        echo "<p style='color:white; font-size:14px; width: 80%; margin: 0 auto;'>Failed to delete ingredient ID: $ingredientID</p>";
+        echo "<p style='color:white; font-size:16px; width: 80%; margin: 0 auto;'>Failed to delete ingredient ID: $ingredientID</p>";
       }
     }
 
@@ -140,9 +140,9 @@ class Controller
       $ingredientTypeID = $_POST['ingredientTypeID'];
 
       if ($this->ingredientModel->updateIngredient($ingredientID, $ingredientName, $ingredientPrice, $supplierID, $ingredientTypeID)) {
-        echo "<p>Successfully updated ingredient with ID: $ingredientID</p>";
+        echo "<p class='text-center bg-light'>Successfully updated ingredient with ID: $ingredientID</p>";
       } else {
-        echo "<p>Failed to update ingredient with ID: $ingredientID</p>";
+        echo "<p class='text-center bg-light'>Failed to update ingredient with ID: $ingredientID</p>";
       }
     }
     // $this->showIngredient();
@@ -214,9 +214,9 @@ class Controller
       $supplierContact = $_POST['supplierContact'];
       $supplierEmail = $_POST['supplierEmail'];
       if ($this->supplierModel->updateSupplier($supplierID, $supplierName, $supplierLocation, $supplierContact, $supplierEmail)) {
-        echo "<p>Successfully updated supplier with ID: $supplierID</p>";
+        echo "<p class='text-center bg-light'>Successfully updated supplier with ID: $supplierID</p>";
       } else {
-        echo "<p>Failed to update supplier with ID: $supplierID</p>";
+        echo "<p class='text-center bg-light'>Failed to update supplier with ID: $supplierID</p>";
       }
     }
     // $this->showsuppliers();

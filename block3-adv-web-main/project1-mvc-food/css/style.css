@@ -1,12 +1,25 @@
 
   body {
-    background: grey;
-  }
 
+    background-image: url('https://img.freepik.com/premium-photo/frame-by-vegetables-creative-white-square-frame-them-concrete-background-with-copy-space_121867-673.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    background-position: center; 
+    background-blend-mode: multiply;
+    
+   
+}
+    
+h1{
+  font-size: 45px;
+  background: #020202;
+  padding: 10px;
+}
   
-  h1,
+
   h2 {
-    color: rgb(245, 249, 247);
+    color: rgb(0, 0, 0);
   }
   
   h2 {
@@ -16,10 +29,12 @@
   
   label {
     color: white;
+    color: rgb(41, 171, 56);
   }
   
   .container {
     max-width: 80%;
+    color: rgb(10, 168, 84);
   }
   
   .presentcards {
@@ -30,6 +45,70 @@
   
   .presentcards li {
     font-size: 15px;
+    color: blueviolet;
   }
 
-  
+
+.form-label {
+  color: #495057;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Input and textarea styling */
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+}
+
+/* Styling the textarea */
+textarea.form-control {
+  color: black; 
+}
+
+/* Submit button styling */
+.btn-success {
+  background-color: #111211;
+  border-color: #dc1d79;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-success:hover {
+  background-color: #157347;
+  border-color: #e2265b;
+}
+
+.card-dish {
+  color: rgb(241, 238, 238) !important;
+  background: #000000 !important;
+  border: 1px solid 
+  padding: 15px; 
+  margin-bottom: 20px; 
+  border-radius: 8px; 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+.card-dish:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 6px 12px rgba(55, 54, 54, 0.15); 
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  text-decoration: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  transition: all 0.3s ease; 
+}
+
+.btn:hover {
+  background-color: #e8bb16; 
+  color: #fff;
+  transform: scale(1.1); /* Slightly enlarges the button */
+  box-shadow: 0 5px 10px rgba(7, 155, 116, 0.2); 
+}

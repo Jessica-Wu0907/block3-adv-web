@@ -8,9 +8,10 @@
       foreach ($dishes as $dish) {
         echo "
 
-      <div class='card border-light text-light bg-transparent mb-3  h-100'>
+      <div class='card card-dish'>
  
-   <div class='card-body text-light'>
+  <div class='card-body' >
+ 
    <h3 class='card-title'>" . $dish['dishID'] . ' ' . $dish['dishName'] . "</h3>
     <p class='card-text'>" . $dish['dishDescription'] . "</p>
  </div>
@@ -18,7 +19,7 @@
   <form method='POST'>
                                 <input type='hidden' name='dishID' value='" . $dish['dishID'] . "'>
                                 <div class='button-container'>
-                                <input type='submit' name='editDish' value='Edit' class='btn' style='background-color: #90EE90'>
+                                <input type='submit' name='editDish' value='Edit' class='btn' style='background-color: green'>
 
 
                                    

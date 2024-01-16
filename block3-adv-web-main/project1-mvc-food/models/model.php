@@ -164,18 +164,7 @@ class ingredientModel
   {
     $mysqli = $this->connect();
     if ($mysqli) {
-      // $result = $mysqli->query("SELECT ingredient.*, supplier.supplierName, ingredientType.ingredientTypeName
-      //                                       FROM ingredient
-      //                                       NATURAL JOIN supplier
-      //                                       NATURAL JOIN ingredientType
-      //                                       ORDER BY ingredientID ASC
-      //                                     ;");
-      // $result = $mysqli->query("SELECT ingredient.*, supplier.supplierName, ingredientType.ingredientTypeName
-      //                                       FROM ingredient
-      //                                       INNER JOIN supplier ON ingredient.supplierID = supplier.supplierID
-      //                                       INNER JOIN ingredientType ON ingredient.ingredientTypeID = ingredientType.ingredientTypeID
-      //                                       ORDER BY ingredientID ASC
-      //                                     ;");
+                  
       $result = $mysqli->query("SELECT ingredient.*, supplier.supplierName, ingredientType.ingredientTypeName
                                             FROM ingredient
                                            LEFT JOIN supplier ON ingredient.supplierID = supplier.supplierID
