@@ -1,12 +1,10 @@
 <div pt-5>
   <div class="container">
-    <div class="d-flex justify-content-between" style="padding: 100px">
-      <h1>Food MVC project</h1>
+    <div class="" style="padding: 100px">
+      <h1 style="text-align:center">MVC project</h1>
       <a href="?" class="btn">Dishes</a>
       <a href="?" class="btn">Ingredients</a>
       <a href="?" class="btn">Suppliers</a>
-
-
     </div>
 
 
