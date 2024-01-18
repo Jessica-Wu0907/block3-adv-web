@@ -220,22 +220,7 @@ class ingredientModel
     }
   }
 
-  // update ingredient
-
-  // public function updateIngredient($ingredientID, $ingredientName, $ingredientPrice, $supplierID, $ingredientTypeID)
-  // {
-  //   $mysqli = $this->connect();
-  //   if ($mysqli) {
-  //     $mysqli->query("UPDATE ingredient 
-  //                     SET ingredientName = '$ingredientName', ingredientPrice = '$ingredientPrice', supplierID = '$supplierID', 
-  //                       ingredientTypeID = '$ingredientTypeID'
-  //                       WHERE ingredientID = '$ingredientID'");
-  //     $mysqli->close();
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // }
+  
 
   public function updateIngredient($ingredientID, $ingredientName, $ingredientPrice, $supplierID, $ingredientTypeID)
   {

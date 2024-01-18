@@ -1,12 +1,13 @@
 
   body {
 
-    background-image: url('https://img.freepik.com/premium-photo/black-stone-food-background-vegetables-spices-black-old-table_187166-9514.jpg');
-    background-size: cover; 
+    /* background-image: url('https://img.freepik.com/premium-photo/black-stone-food-background-vegetables-spices-black-old-table_187166-9514.jpg'); */
+    /* background-size: cover; 
     background-repeat: no-repeat; 
     background-attachment: fixed; /* Keeps the background fixed during scrolling */
-    background-position: center; 
-    background-blend-mode: multiply;
+    /* background-position: center; 
+    background-blend-mode: multiply; */ 
+    background: grey;
     
    
 }
@@ -28,7 +29,7 @@ h1{
   }
   
   label {
-    color: white;
+    color: rgb(20, 19, 19);
    
   }
   

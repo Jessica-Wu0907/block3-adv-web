@@ -29,10 +29,7 @@
   </div>
  </div>
       ";
-        // var_dump($dishes);
-    
-
-        // echo $dish['dishID'] . ' ' . $dish['dishName'] . ' ' . $dish['dishDescription'] . '<br>';
+       
     
       }
     } else {
